@@ -1,49 +1,51 @@
 # 🎯 Number Guessing Game (Python)
 
-A simple command-line Number Guessing Game built using Python.
-
-The program randomly selects a number, and the player has to guess it correctly using hints like **Higher** or **Lower**.
-
-This project helps beginners practice:
-
-- Python loops
-- Conditional statements
-- Functions
-- Exception handling
-- Random module
-- User input handling
-
----
+A simple command-line Number Guessing Game built using Python. The player selects a difficulty level and tries to guess a randomly generated number in the fewest attempts possible.
 
 ## 📌 Features
 
-✔ Multiple difficulty levels  
-✔ Random number generation  
-✔ Higher / Lower hints  
-✔ Attempt counter  
-✔ Replay option  
-✔ Best score tracking (lowest attempts)  
-✔ Input validation using `try-except`
+### Multiple difficulty levels:
 
----
+- Easy (1–10)
+- Medium (1–50)
+- Hard (1–100)
 
-## 🛠 Difficulty Levels
+- Tracks number of attempts per round
+- Maintains a best score during the session
+- User-friendly prompts and feedback
+- Replay option after each game
 
-| Level | Number Range |
-|---|---|
-| Easy | 1 to 10 |
-| Medium | 1 to 50 |
-| Hard | 1 to 100 |
+## 🎮 How to Play
 
----
+1. Choose a difficulty level (1, 2, or 3).
 
-## 🚀 How to Run
+2. Enter your guesses based on the selected range.
 
-### Step 1: Install Python
+3. The program will guide you:
 
-Make sure Python is installed on your system.
+- "Too low! Try a higher number." if your guess is too low
+- "Too high! Try a lower number." if your guess is too high
 
-Check using:
+4. Keep guessing until you find the correct number.
 
-```bash
-python --version
+5. Try to beat your best score (least number of attempts).
+
+## 🧠 Game Logic
+
+- The computer randomly selects a number within the chosen range.
+- Each guess increases the attempt counter.
+- The game ends when the correct number is guessed.
+- The best score is updated if the current attempt count is lower.
+
+## 🔁 Replay Option
+
+After each round, you can choose to:
+
+- Type yes to play again
+- Type no to exit the game
+
+## 📜 License
+
+This project is open-source and free to use.
+
+Enjoy the game and happy coding! 🎉
